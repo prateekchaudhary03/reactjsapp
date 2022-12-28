@@ -12,6 +12,9 @@ jobs:
         run: |
           echo "hello duniya valo"
           ls -lrtha
+          mkdir test
+          cat >> txt.txt
+          cp txt.txt test/
         shell: bash
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
