@@ -15,6 +15,8 @@ jobs:
           mkdir test
           cat >> txt.txt
           cp txt.txt test/
+          cd test
+          ls -lrtha
         shell: bash
       - name: Use Node.js 12.x
         uses: actions/setup-node@v1
